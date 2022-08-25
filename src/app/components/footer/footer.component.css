@@ -1,0 +1,14 @@
+.row{
+    padding: 50px;
+
+    background-color:black;
+}
+
+footer{
+    color: #fefefe;
+    font-size: 14px;
+    display: flex; /* flex es para mover el contenido*/
+    flex-direction: column; /* para que los parrafos se ubiquen en columnas*/
+    text-align: center; /*para alinear el texto en el centro */
+    box-shadow: 2px -2px 5px #FF00FF;
+}
