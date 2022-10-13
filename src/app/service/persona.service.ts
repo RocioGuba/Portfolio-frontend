@@ -6,19 +6,14 @@ import { persona } from '../model/persona.model';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PersonaService {
-  public get http(): HttpClient {
-    return this._http;
-  }
-  public set http(value: HttpClient) {
-    this._http = value;
-  }
-  URL = 'http://localhost:8080/personas/';
+URL = 'http://localhost:8080/personas/';
 
-  constructor(private _http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  public getPersona(): Observable<persona>{ /*observable: angular la utiliza para hacer todas las peticiones acincronas, ej: podemos hacer o difinir eventos que se envian al componente hijo y a su vez al componente padre*/
+public getPersona(): Observable<persona>{    /*observable: angular la utiliza para hacer todas las peticiones acincronas, ej: podemos hacer o definir eventos que se envian al componente hijo y a su vez al componente padre*/
+return this.http.get<persona>(this.URL+'traer/perfil');
+}
 
-    return this._http.get<persona>(this.URL+'traer/perfil');
-  }
 }
