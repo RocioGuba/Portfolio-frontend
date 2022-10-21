@@ -10,10 +10,10 @@ import { EducacionService } from 'src/app/service/educacion.service';
 })
 export class EditeducacionComponent implements OnInit {
   educacion: Educacion = null;
-  
+
   constructor(
-    private educacionS: EducacionService,
-    private activatedRouter : ActivatedRoute,
+    private educacionS: EducacionService, 
+    private activatedRouter: ActivatedRoute,
     private router: Router
   ) { }
 
@@ -23,8 +23,8 @@ export class EditeducacionComponent implements OnInit {
       data =>{
         this.educacion = data;
       }, err =>{
-         alert("Error al modificar");
-         this.router.navigate(['']);
+        alert ("Error al modificar");
+        this.router.navigate(['']);
       }
     )
   }
@@ -34,10 +34,11 @@ export class EditeducacionComponent implements OnInit {
     this.educacionS.update(id, this.educacion).subscribe(
       data => {
         this.router.navigate(['']);
-      }, err => {
+      }, err =>{
         alert("Error al modificar la educacion");
         this.router.navigate(['']);
       }
     )
+
   }
 }
