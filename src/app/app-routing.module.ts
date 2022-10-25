@@ -5,6 +5,8 @@ import { NeweducacionComponent } from './components/educacion/neweducacion/newed
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { HOMEComponent } from './components/home/home.component';
+import { EditskillComponent } from './components/hys/editskill/editskill.component';
+import { NewskillComponent } from './components/hys/newskill/newskill.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
@@ -14,8 +16,8 @@ const routes: Routes = [
   { path: 'editexp/:id', component: EditExperienciaComponent },
   { path: 'nuevaedu', component: NeweducacionComponent },
   { path: 'editedu/:id' , component: EditeducacionComponent},
-  { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent}
+  { path: 'newskill', component: NewskillComponent},
+  { path: 'editskill/:id', component: EditskillComponent}
 
 ];
 

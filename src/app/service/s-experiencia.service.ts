@@ -8,7 +8,7 @@ import { ExperienciaL } from '../model/experiencia-l';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  URL = environment.URL + 'explab/';
+  URL =  'http://localhost:8080/explab/';
 
   constructor(private httpClient: HttpClient) { }
 
