@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://apportfoliordgb.herokuapp.com/personas/';
+  URL = 'https://portfoliordgb.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) { }
 
